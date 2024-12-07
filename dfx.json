@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "basit-proje-backend": {
+      "main": "src/basit-proje-backend/main.mo",
+      "type": "motoko"
+    },
+    "basit-proje-frontend": {
+      "dependencies": [
+        "basit-proje-backend"
+      ],
+      "source": [
+        "src/basit-proje-frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
