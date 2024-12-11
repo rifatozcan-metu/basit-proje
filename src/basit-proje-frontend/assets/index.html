@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blog Platformu</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .post { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
+        .post h3 { margin: 0; }
+        textarea, input, button { display: block; margin: 10px 0; width: 100%; max-width: 600px; }
+    </style>
+</head>
+<body>
+    <h1>Mini Blog Platformu</h1>
+    <h2>Yeni Yazı Ekle</h2>
+    <input id="title" type="text" placeholder="Başlık" />
+    <textarea id="content" rows="4" placeholder="İçerik"></textarea>
+    <button onclick="addPost()">Ekle</button>
+    <h2>Yazılar</h2>
+    <div id="postList"></div>
+    <script src="index.js"></script>
+</body>
+</html>
